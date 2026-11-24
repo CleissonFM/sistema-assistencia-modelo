@@ -2,7 +2,20 @@
 
 Sistema completo para assistência técnica de celulares, tablets e computadores, com venda de aparelhos e acessórios. Funciona no computador e no celular, com usuário e senha para cada pessoa da equipe e os dados na nuvem, atualizados em tempo real.
 
-**Para instalar na sua loja, siga o [INSTALAR.md](INSTALAR.md).**
+## Duas versões: escolha a sua
+
+| | **Versão local** (mais fácil) | **Versão online** (equipe) |
+|---|---|---|
+| Instalação | nenhuma: abre o link, cadastra a loja e usa | uns 30 minutos (Supabase + hospedagem) |
+| Onde ficam os dados | **no próprio aparelho** (celular ou computador) | num banco de dados na nuvem, seu |
+| Login | não tem | usuário e senha para cada pessoa |
+| Vários aparelhos ao mesmo tempo | não (cada aparelho tem os seus dados) | sim, em tempo real |
+| Sem internet | funciona | precisa de internet |
+| Cópia de segurança | você baixa em Configurações (faça toda semana) | baixar em Configurações |
+| Assistente de IA | não | opcional |
+
+- **Versão local:** pasta [`versao-local/`](versao-local) (ou `versao-local.zip`). Para colocar no ar, envie o zip para qualquer hospedagem de site (Cloudflare › Workers & Pages › Upload your static files) e compartilhe o link. Cada pessoa que abrir o link tem o seu próprio sistema, com os dados só no aparelho dela. Dá para instalar como aplicativo: no Android/Chrome, menu ⋮ › *Instalar app*; no iPhone/Safari, *Compartilhar › Adicionar à Tela de Início*.
+- **Versão online:** siga o [INSTALAR.md](INSTALAR.md).
 
 ## O que o sistema faz
 - **Ordens de serviço:** entrada com checklist, orçamento com atalhos, técnico, prioridade, etapas, aviso ao cliente pelo WhatsApp ou e-mail, via do cliente, entrega e recebimento.
